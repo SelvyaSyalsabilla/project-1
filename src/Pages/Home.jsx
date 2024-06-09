@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import "./Home.css";
 import klinikdipo from "../images/klinikdipo.png";
 import Footer from "../components/Footer";
-
+// jadwal klinik
 const Home = () => {
   return (
     <div className="container">
@@ -25,7 +25,7 @@ const Home = () => {
             <span style={{ fontWeight: "bold" }}> Jam Operasional : </span>
           </p>
           <ul>
-            <li>Senin - Sabtu (08:00 - 13.30)</li>
+            <li>Senin - Sabtu (08:00 - 13.30)</li> 
             <li>Senin - Sabtu (14:00 - 21:00)</li>
             <li>Minggu & Liburan Bersama</li>
           </ul>
