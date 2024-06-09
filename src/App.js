@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Layanan from './Pages/layanan';
+import Login from './Pages/login';
+import KebijakanPrivasi from './Pages/KebijakanPrivasi';
+import LupaPass from './Pages/LupaPass';
+import Daftar from './Pages/Daftar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/layanan" element={<Layanan />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/KebijakanPrivasi" element={<KebijakanPrivasi />} />
+        <Route path="/lupa-password" element={<LupaPass />} />
+        <Route path="/daftar" element={<Daftar />} />
+        
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 
